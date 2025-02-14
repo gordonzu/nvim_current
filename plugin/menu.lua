@@ -1,3 +1,5 @@
+--if true then return {} end
+
 vim.cmd [[
   aunmenu PopUp
   anoremenu PopUp.Inspect     <cmd>Inspect<CR>

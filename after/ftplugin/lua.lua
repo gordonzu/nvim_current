@@ -1,3 +1,5 @@
+if true then return {} end
+print('Hello')
 local set = vim.opt_local
 
 set.shiftwidth = 4

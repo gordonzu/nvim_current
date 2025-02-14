@@ -1,3 +1,5 @@
+--if true then return {} end
+
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
 
 local state = {
