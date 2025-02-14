@@ -1,3 +1,4 @@
+--if true then return {} end
 return {
   {
     'nvim-telescope/telescope.nvim',
@@ -33,7 +34,7 @@ return {
         }
       end)
 
-      require "config.telescope.multigrep".setup()
+      require "gordonyx.telescope.multigrep".setup()
     end
   }
 }

@@ -1,4 +1,5 @@
--- lua/custom/plugins/mini.lua
+--if true then return {} end
+
 return {
 	{
 		'echasnovski/mini.nvim',
