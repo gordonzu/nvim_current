@@ -6,8 +6,8 @@ return {
         priority = 1000,
         opts = {},
         config = function()
-            vim.cmd("set background=light")
-            vim.cmd("colorscheme hybrid")
+            --vim.cmd("set background=light")
+            --vim.cmd("colorscheme hybrid")
         end
     },
 
@@ -65,7 +65,7 @@ return {
     {
         "rebelot/kanagawa.nvim",
         config = function()
-            --vim.cmd([[colorscheme kanagawa]])
+            vim.cmd([[colorscheme kanagawa]])
         end,
     },
 
