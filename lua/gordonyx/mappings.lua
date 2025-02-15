@@ -1,4 +1,4 @@
---if true then return {} end
+if true then return {} end
 
 local map = vim.keymap.set
 

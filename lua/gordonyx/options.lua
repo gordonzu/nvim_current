@@ -13,4 +13,3 @@ o.wrap = true
 o.clipboard = "unnamedplus"
 
 vim.opt_global.shortmess:remove("F")
-    
