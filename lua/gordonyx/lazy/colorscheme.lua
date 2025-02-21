@@ -40,8 +40,8 @@ return {
     {
         "rebelot/kanagawa.nvim",
         config = function()
-            --vim.cmd([[set background=dark]])
-            --vim.cmd([[colorscheme kanagawa]])
+            vim.cmd([[set background=dark]])
+            vim.cmd([[colorscheme kanagawa]])
         end,
     },
 
@@ -74,10 +74,9 @@ return {
         lazy = false,
         priority = 1000,
         init = function()
-            vim.cmd.colorscheme("lackluster-dark")
+            --vim.cmd.colorscheme("lackluster-dark")
             -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
             -- vim.cmd.colorscheme("lackluster-mint")
-        end,
+    end,
     },
-
 }
