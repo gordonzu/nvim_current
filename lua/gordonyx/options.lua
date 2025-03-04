@@ -1,4 +1,3 @@
-print("Options")
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -7,10 +6,6 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
 vim.opt.showmode = false
-
-vim.schedule(function()
-  vim.opt.clipboard = 'unnamedplus'
-end)
 
 vim.opt.tabstop=4
 vim.opt.softtabstop=0
@@ -27,17 +22,29 @@ vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.swapfile = false
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+--vim.opt.list = true
+--vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt_global.shortmess:remove("F")
+
+vim.opt.background = "light"
+vim.cmd.colorscheme("default")
+vim.cmd.highlight({ "Comment", "guibg=gray" })
+
+--vim.api.nvim_set_hl(0, "Comment", {bg = "#808080"})
+--vim.api.nvim_set_hl(0, "@comment", {link = "Comment"})
+
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)
 
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "scala",
