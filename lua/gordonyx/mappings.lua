@@ -1,5 +1,3 @@
-local tree = require("gordonyx.lazy.neo-tree")
-
 vim.g.mapleader = " "
 
 -- [[ Basic Keymaps ]]
@@ -8,7 +6,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set("n", "<leader>x", vim.cmd.bd)
 vim.keymap.set("n", "<leader>]", vim.cmd.bnext)
 vim.keymap.set("n", "<leader>[", vim.cmd.bprev)
-vim.keymap.set("n", "<leader>t",vim.cmd.Neotree)
+vim.keymap.set("n", "<C-t>", ":Neotree toggle<CR>")
 
 -- TIP: Disable arrow keys in normal mode
 vim.keymap.set('n', '<left>', '<cmd>echo ""<CR>')
