@@ -1,3 +1,4 @@
+require('gordonyx.lazy.colors')
 vim.g.mapleader = " "
 
 -- [[ Basic Keymaps ]]
@@ -7,6 +8,21 @@ vim.keymap.set("n", "<leader>x", vim.cmd.bd)
 vim.keymap.set("n", "<leader>]", vim.cmd.bnext)
 vim.keymap.set("n", "<leader>[", vim.cmd.bprev)
 vim.keymap.set("n", "<C-t>", ":Neotree toggle<CR>")
+
+-- [[ Toggle colorschemes ]]
+vim.keymap.set('n', '<C-z>',
+  function()
+    vim.cmd('set background=light')
+    vim.cmd('colorscheme default')
+  end
+)
+
+vim.keymap.set('n', '<C-x>',
+  function()
+    vim.cmd('set background=dark')
+    vim.cmd('colorscheme kanagawa-dragon')
+  end
+)
 
 -- TIP: Disable arrow keys in normal mode
 vim.keymap.set('n', '<left>', '<cmd>echo ""<CR>')
