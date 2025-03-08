@@ -18,4 +18,9 @@ require("lazy").setup({
     change_detection = { notify = false }
 })
 
-
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*.scala.html",
+  callback = function()
+    vim.cmd "set ft=html"
+  end,
+})

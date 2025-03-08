@@ -35,10 +35,10 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt_global.shortmess:remove("F")
 
-vim.opt.background = "light"
-vim.cmd.colorscheme("default")
-vim.cmd.highlight({ "Comment", "guibg=gray" })
-
+-- vim.opt.background = "light"
+-- vim.cmd.colorscheme("default")
+-- vim.cmd.highlight({ "Comment", "guifg=gray" })
+--
 --vim.api.nvim_set_hl(0, "Comment", {bg = "#808080"})
 --vim.api.nvim_set_hl(0, "@comment", {link = "Comment"})
 
@@ -46,16 +46,4 @@ vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
 
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "scala",
-	command = "setlocal shiftwidth=2 tabstop=2"
-})
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "lua",
-	command = "setlocal shiftwidth=2 tabstop=2"
-})
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "html",
-	command = "setlocal shiftwidth=2 tabstop=2"
-})
 
