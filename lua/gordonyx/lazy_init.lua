@@ -24,3 +24,10 @@ vim.api.nvim_create_autocmd("BufEnter", {
     vim.cmd "set ft=html"
   end,
 })
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*.html",
+  callback = function()
+    vim.cmd "set ft=html"
+  end,
+})
