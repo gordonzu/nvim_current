@@ -36,8 +36,8 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt_global.shortmess:remove("F")
 
--- vim.opt.background = "light"
--- vim.cmd.colorscheme("default")
+--vim.opt.background = "light"
+--vim.cmd.colorscheme("kanagawa")
 -- vim.cmd.highlight({ "Comment", "guifg=gray" })
 --
 --vim.api.nvim_set_hl(0, "Comment", {bg = "#808080"})
