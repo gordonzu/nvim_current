@@ -8,6 +8,9 @@ vim.keymap.set("n", "<leader>x", vim.cmd.bd)
 vim.keymap.set("n", "<leader>]", vim.cmd.bnext)
 vim.keymap.set("n", "<leader>[", vim.cmd.bprev)
 vim.keymap.set("n", "<C-t>", ":Neotree toggle<CR>")
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<C-o>", "<CMD>Oil --float .<CR>", { desc = "Open floating window" })
+
 
 -- [[ Toggle colorschemes ]]
 vim.keymap.set('n', '<C-z>',

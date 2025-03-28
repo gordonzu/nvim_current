@@ -12,7 +12,7 @@ return {
 				position = "current",
 				mappings = {},
 			},
-			hijack_netrw_behavior = "open_default",
+			--hijack_netrw_behavior = "open_default",
 			filesystem = {
 				filtered_items = {
 					visible = true,
