@@ -1,12 +1,13 @@
-
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
 vim.opt.showmode = true
 vim.opt.clipboard = "unnamedplus"
+vim.opt.wrap = false
+vim.opt.textwidth = 80
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -24,24 +25,10 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
-
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
---vim.opt.list = true
---vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt_global.shortmess:remove("F")
-
---vim.opt.background = "light"
---vim.cmd.colorscheme("kanagawa")
--- vim.cmd.highlight({ "Comment", "guifg=gray" })
---
---vim.api.nvim_set_hl(0, "Comment", {bg = "#808080"})
---vim.api.nvim_set_hl(0, "@comment", {link = "Comment"})
 
 vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
