@@ -14,17 +14,17 @@ vim.keymap.set("n", "<C-o>", "<CMD>Oil --float .<CR>", { desc = "Open floating w
 
 -- [[ Toggle colorschemes ]]
 vim.keymap.set('n', '<C-z>',
-  function()
-    vim.cmd('set background=light')
-    vim.cmd('colorscheme default')
-  end
+    function()
+        vim.cmd('set background=light')
+        vim.cmd('colorscheme default')
+    end
 )
 
 vim.keymap.set('n', '<C-x>',
-  function()
-    vim.cmd('set background=dark')
-    vim.cmd('colorscheme kanagawa-dragon')
-  end
+    function()
+        vim.cmd('set background=dark')
+        vim.cmd('colorscheme kanagawa-dragon')
+    end
 )
 
 -- TIP: Disable arrow keys in normal mode

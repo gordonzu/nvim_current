@@ -34,4 +34,18 @@ vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
 
+vim.cmd([[
+  highlight Comment cterm=NONE gui=NONE
+  highlight Function cterm=NONE gui=NONE
+  highlight Statement cterm=NONE gui=NONE
+  highlight Type cterm=NONE gui=NONE
+  highlight Keyword cterm=NONE gui=NONE
+  highlight Conditional cterm=NONE gui=NONE
+  highlight Repeat cterm=NONE gui=NONE
+  highlight Label cterm=NONE gui=NONE
+  highlight Operator cterm=NONE gui=NONE
+  highlight Exception cterm=NONE gui=NONE
+]])
+
+
 

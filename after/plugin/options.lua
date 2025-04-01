@@ -11,6 +11,13 @@ vim.api.nvim_create_autocmd("BufEnter", {
     end,
 })
 
+vim.cmd([[
+  hi Comment cterm=NONE gui=NONE
+  hi Keyword cterm=NONE gui=NONE
+  hi Type cterm=NONE gui=NONE
+  hi Function cterm=NONE gui=NONE
+]])
+
 --[[ vim.api.nvim_create_autocmd("BufEnter", {
   pattern = "*.scala",
   callback = function()
